@@ -13,6 +13,9 @@ func (customer Customer) sayHello(name string){
 	fmt.Println("Hello", name, "My name is", customer.Nama)
 }
 
+func (user Customer) greeting() {
+	fmt.Println("Hello ", user.Nama)
+}
 
 func main() {
 	// Cara membuat struct 1
@@ -22,6 +25,8 @@ func main() {
 	fatur.Umur = 19
 
 	fatur.sayHello("rohman")
+
+	fatur.greeting()
 
 	// // Cara membuat struct 2
 	// rohman := Customer{
