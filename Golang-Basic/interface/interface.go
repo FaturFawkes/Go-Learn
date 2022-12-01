@@ -37,7 +37,5 @@ func main() {
 	}
 
 	sayHello(cat)
-	
-
 	sayHello(fatur)
 }
