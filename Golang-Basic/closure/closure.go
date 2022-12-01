@@ -6,12 +6,13 @@ import "fmt"
 
 func main() {
 	counter := 0
-	increment := func(){
+	increment := func() {
 		fmt.Println("increment")
 		counter++
 	}
 
 	increment()
+	fmt.Println(counter)
 	increment()
 	fmt.Println(counter)
 }
