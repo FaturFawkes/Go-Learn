@@ -14,17 +14,20 @@ func catch(){
 
 func main() {
 	defer catch()
-	result := random()
-	switch value := result.(type) {
+	res := random()
+
+	// MENGECEK TIPE DATA DARI INTERFACE DENGAN SWITCH
+	switch res.(type) {
 	case string:
-		fmt.Println("String", value)
-	case int: 
-		fmt.Println("Integer", value)
+		fmt.Println("Ini adalah string", res)
+	case bool:
+		fmt.Println("Ini adalah boolean", res)
 	default:
-		fmt.Println("unknown")
+		panic("error")
 	} 
-	// var result interface{} = random()
-	// resultString := result.(string)
-	// fmt.Println(resultString)
-	
+
+	// MENGECEK LANGSUNG TIPE DATA
+	// Jika sudah yakin return tipe datanya apa
+	tipe := res.(bool)
+	fmt.Println(tipe, res)
 }
