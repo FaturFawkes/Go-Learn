@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTART:20221209T030000Z
+DTEND:20221209T033000Z
+DTSTAMP:20221208T035914Z
+ORGANIZER;CN=rianadeivy@gmail.com:mailto:rianadeivy@gmail.com
+UID:6oc6r1j93d2g3ivevfradb6vti@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nur.faturohman28@gmail.com;X-NUM-GUESTS=0:mailto:nur.faturohman28@g
+ mail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/qjn-ozkt-kwr
+X-MICROSOFT-CDO-OWNERAPPTID:2125759798
+CREATED:20221208T035913Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/qj
+ n-ozkt-kwr\n\nLearn more about Meet at: https://support.google.com/a/users/
+ answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20221208T035913Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Interview Go *Nur Fatchrohman
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
