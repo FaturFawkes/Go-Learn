@@ -25,5 +25,6 @@ func TestManyGoroutine(t *testing.T) {
 	for i := 0; i < 100000; i++ {
 		go DisplayNumber(i)
 	}
-	time.Sleep(5 * time.Second)
+	fmt.Println("Kill")
+	// time.Sleep(2 * time.Second)
 }
