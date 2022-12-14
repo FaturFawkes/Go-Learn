@@ -3,6 +3,7 @@ package belajargoroutine
 import (
 	"fmt"
 	"strconv"
+	"sync"
 	"testing"
 	"time"
 )
@@ -125,11 +126,14 @@ func TestSelectChannel(t *testing.T) {
 // Race Condition
 func TestRaceCondition(t *testing.T) {
 	var x int
+	var mutex sync.Mutex
 
 	for i := 1; i <= 1000; i++ {
 		go func ()  {
 			for j := 1; j <= 1000; j++ {
+				mutex.Lock()
 				x += 1
+				mutex.Unlock()
 			}
 		}()
 	}
