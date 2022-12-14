@@ -126,16 +126,17 @@ func TestSelectChannel(t *testing.T) {
 // Race Condition
 func TestRaceCondition(t *testing.T) {
 	var x int
-	var mutex sync.Mutex
+	var mutex sync.RWMutex
 
 	for i := 1; i <= 1000; i++ {
 		go func ()  {
-			for j := 1; j <= 1000; j++ {
-				mutex.Lock()
+			for j := 1; j <= 100; j++ {
+				mutex.RLock()
 				x += 1
-				mutex.Unlock()
+				mutex.RUnlock()
+				fmt.Println(x)
 			}
-		}()
+			}()
 	}
 	time.Sleep(5 * time.Second)
 	fmt.Println("Counter = ", x)
