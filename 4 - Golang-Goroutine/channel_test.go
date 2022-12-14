@@ -121,3 +121,18 @@ func TestSelectChannel(t *testing.T) {
 		}
 	}
 }
+
+// Race Condition
+func TestRaceCondition(t *testing.T) {
+	var x int
+
+	for i := 1; i <= 1000; i++ {
+		go func ()  {
+			for j := 1; j <= 1000; j++ {
+				x += 1
+			}
+		}()
+	}
+	time.Sleep(5 * time.Second)
+	fmt.Println("Counter = ", x)
+}
